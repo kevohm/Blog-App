@@ -7,8 +7,8 @@ const AppContext = createContext();
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   //default
-  axios.defaults.baseURL = "https://tyrantx-blog-app.herokuapp.com/v1/";
-  // axios.defaults.withCredentials = true
+  axios.defaults.baseURL = "https://blog-app-tqdv.onrender.com/v1/";
+  axios.defaults.withCredentials = true;
   //interceptors
   axios.interceptors.request.use(
     function (config) {
